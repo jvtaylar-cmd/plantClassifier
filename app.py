@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 
-@st.cache_resource()
+@st.cache
 def load_model():
   model=tf.keras.models.load_model('plant_classifier.hdf5')
   return model
